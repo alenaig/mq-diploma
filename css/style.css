@@ -5,8 +5,8 @@
     }
     header {
         background-image: url("/images/banner-bg.jpg");
-        height: 150px;
+        height: 450px;
         background-position: 100% auto;
-        background-color: red;
+        
     }
 }
