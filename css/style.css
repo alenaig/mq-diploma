@@ -1,12 +1,12 @@
 @media (min-width: 1200px) {
     html {
         background-image: url("/NOEMI_mq_desktop.jpg");
-        background-position: 100% auto;
+        background-size: 100% auto;
     }
     header {
         background-image: url("/images/banner-bg.jpg");
         height: 450px;
-        background-position: 100% auto;
+        background-size: 100% auto;
         
     }
 }
