@@ -1,5 +1,5 @@
 @media (min-width: 1200px) {
-    .header {
+    header {
         background-image: url("images/banner-bg.img");
         height: 150px;
         background-position: 100%;
