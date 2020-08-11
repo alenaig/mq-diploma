@@ -2,11 +2,15 @@
     html {
         background-image: url("../NOEMI_mq_desktop.jpg");
         background-size: 100% auto;
+        opacity: 0.6;
     }
     header {
         background-image: url("../images/banner-bg.jpg");
         height: 450px;
         background-size: 100% auto;
-        
+        opacity: 1.0;
     }
+    img.header{
+        height: 35px;
+    } 
 }
