@@ -12,8 +12,10 @@
         background-image: url("../images/banner-bg.jpg");
         height: 450px;
         background-size: 100% auto;
+        position:relative;
+        z-index: 0;
     }
-    header::after {
+    header::after { 
         content: "";
         position: absolute;
         top: 0;
@@ -22,6 +24,7 @@
         left: 0;
         background-color: #666666;
         opacity: 0.6;
+        z-index: -1;
       }
     .logo {
         position: relative;
