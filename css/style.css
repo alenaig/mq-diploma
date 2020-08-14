@@ -79,9 +79,9 @@ h1 {
 h2 {
     color: #000000;
 }
+
 .trend__posts {
     display: flex;
-    justify-content: space-between;
 }
 .post1 {
     background-image: url("../images/trend1.jpg");
@@ -96,6 +96,7 @@ h2 {
     background-image: url("../images/trend4.jpg");
 }
 .top__post {
+    display: flex;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -163,9 +164,14 @@ h2 {
         font-size: 20px;
     }
     .top__post {
-        width: 410px;
+        width: calc((100% - 24px) / 4);
         height: 320px;
-        border: solid;
+    }
+    .trend__posts {
+        max-width: 1650px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 
