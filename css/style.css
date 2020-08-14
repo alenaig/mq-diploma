@@ -1,4 +1,4 @@
-/* Common features*/
+/* Common styles*/
 @font-face {
     font-family: openSans;
     src: url("../fonts/OpenSans-Bold.ttf");
@@ -22,10 +22,15 @@ header::after {
     opacity: 0.6;
     z-index: -1;
 }
+
+.top__panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .menu__burger {
-    display: block;
-    width: 1.4em;
-    height: 1em;  
+    width: 25px;
+    height: 20px;  
     border: none;
     padding: 0;
   
@@ -40,8 +45,7 @@ header::after {
     content:"";
     width: 100%;
     height: 20%;
-    border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #a88f54;
     position: absolute;
     left: 0;
 }
@@ -55,16 +59,51 @@ header::after {
     width: 100%;
     height: 20%;
     margin-top: -0.1em;  
-  
-    border-radius: 5px;
-    background-color: #ffffff;  
+    background-color: #a88f54;  
   
     position: absolute;
     left: 0;
     top: 50%;
 }
-  
+h1, h2 {
+    font-family: openSans, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: #ffffff;
+}
+h2 {
+    color: #000000;
+}
+.trend__posts {
+    display: flex;
+    justify-content: space-between;
+}
+.post1 {
+    background-image: url("../images/trend1.jpg");
+}
+.post2 {
+    background-image: url("../images/trend2.jpg");
+}
+.post3 {
+    background-image: url("../images/trend3.jpg");
+}
+.post4 {
+    background-image: url("../images/trend4.jpg");
+}
+.top__post {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000000;
+}
 
+  
+/*Desktop styles*/
 @media (min-width: 1200px) {
     header {
         background-image: url("../images/banner-bg.jpg");
@@ -89,44 +128,50 @@ header::after {
     .menu__burger {
         display: none;
     }
-    .menu ul {
+    .top__panel ul {
         display: inline-block;
         position: absolute;
         right: 245px; 
         top: 14px;
     }
-    .menu li {
+    .top__panel li {
         display: inline;
         margin-left: 30px;
         text-transform: uppercase;
         font-family: openSans, sans-serif;
         font-weight: 400;
     }
-    .menu a {
+    .top__panel a {
         font-size: 13px;
         color: #ffffff;
     }
-    .menu a:link {
+    .top__panel a:link {
         text-decoration: none;
         color: #ffffff;
     }
-    .menu a:hover, header a:active {
+    .top__panel a:hover, header a:active {
         text-decoration: underline;
     }
     h1 {
-        color: #ffffff;
         font-size: 45px;
-        font-family: openSans, sans-serif;
-        font-weight: 700;
-        text-transform: uppercase;
         width: 43%;
         min-width: 700px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
         margin-top: 120px; 
     }
+
+    h2 {
+        font-size: 20px;
+    }
+    .top__post {
+        width: 410px;
+        height: 320px;
+        border: solid;
+    }
+    
+
 }
+
+/*Show burger menu*/
 
 @media (max-width: 1199px) {
     .menu__burger {
@@ -137,6 +182,8 @@ header::after {
     }
 
 }
+
+/*Tablet styles*/
 
 @media (min-width: 641px) and (max-width: 1199px) {
     header {

@@ -11,14 +11,14 @@
 <body>
     <header>
         <div class="header__content">
-            <img src="svg/noemi-logo.svg" class="logo" alt="logo">
-            <div class="menu">
-                <button class="menu__burger">
-                    ::before
-                    <span class="menu__burger__label">открыть меню</span>
-                    ::after
-                </button>
+            <div class="top__panel">
+                <img src="svg/noemi-logo.svg" class="logo" alt="logo">
                 <nav>
+                    <button class="menu__burger">
+                        ::before
+                        <span class="menu__burger__label">открыть меню</span>
+                        ::after
+                    </button>
                     <ul class="menu__list">
                         <li><a href="#">главная</a></li>
                         <li><a href="#">посты</a></li>
@@ -36,25 +36,28 @@
 
     <section class="trend">
         <h2>сейчас в тренде</h2>
-        <div>
-            <a class="category" href="#">lifestyle</a>
-            <a class="category" href="#">interior</a>
-            <h3>сейчас в тренде: сад на подоконнике</h3>
+        <div class="trend__posts">
+            <div class="top__post post1">
+                <a class="category" href="#">lifestyle</a>
+                <a class="category" href="#">interior</a>
+                <h3>сейчас в тренде: сад на подоконнике</h3>
+            </div>
+            <div class="top__post post2">
+                <a class="category" href="#">food</a>
+                <h3>сыры на красивых картинках из интернета: какие они на вкус?</h3>
+            </div>
+            <div class="top__post post3">
+                <a class="category" href="#">lifestyle</a>
+                <a class="category" href="#">travel</a>
+                <h3>собираемся в первый поход в горы</h3>
+            </div>
+            <div class="top__post post4">
+                <a class="category" href="#">food</a>
+                <a class="category" href="#">health</a>
+                <h3>сейчас в тренде: сколько витамина с в лимонах?</h3>
+            </div>
         </div>
-        <div>
-            <a class="category" href="#">food</a>
-            <h3>сыры на красивых картинках из интернета: какие они на вкус?</h3>
-        </div>
-        <div>
-            <a class="category" href="#">lifestyle</a>
-            <a class="category" href="#">travel</a>
-            <h3>собираемся в первый поход в горы</h3>
-        </div>
-        <div>
-            <a class="category" href="#">food</a>
-            <a class="category" href="#">health</a>
-            <h3>сейчас в тренде: сколько витамина с в лимонах?</h3>
-        </div>
+
     </section>
 
     <section class="feed">
