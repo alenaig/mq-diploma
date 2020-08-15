@@ -1,3 +1,22 @@
+/*Reset styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul[class], ol[class] {
+  list-style: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a:link, a:hover, a:active {
+    text-decoration: none;
+}
+
+
+
 /* Common styles*/
 @font-face {
     font-family: openSans;
@@ -65,7 +84,7 @@ header::after {
     left: 0;
     top: 50%;
 }
-h1, h2 {
+h1, h2, h3 {
     font-family: openSans, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -73,7 +92,7 @@ h1, h2 {
     margin-left: auto;
     margin-right: auto;
 }
-h1 {
+h1, h3 {
     color: #ffffff;
 }
 h2 {
@@ -102,7 +121,20 @@ h2 {
     background-position: center center;
     background-color: #000000;
 }
-
+.top__post::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+}
+a.category {
+    color: #b59f5b;
+    text-transform: uppercase;
+}
   
 /*Desktop styles*/
 @media (min-width: 1200px) {
@@ -162,10 +194,27 @@ h2 {
 
     h2 {
         font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    h2::after {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 3px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #e1d9bd;
+    }
+
+    .trend {
+        padding-top: 58px;
     }
     .top__post {
         width: calc((100% - 24px) / 4);
         height: 320px;
+        position: relative;
     }
     .trend__posts {
         max-width: 1650px;
@@ -173,7 +222,29 @@ h2 {
         margin-left: auto;
         margin-right: auto;
     }
+    .trend__content {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        margin: 0 20px 16px 20px;
+        padding: 37px 32px 32px 32px;
+        border: 3px solid #b59f5b;
+    }
     
+    h3 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    a.category {
+        font-size: 15.7px;
+        font-family: openSans, sans-serif;
+        font-weight: 700;
+        margin-right: 20px;
+
+    }
 
 }
 
