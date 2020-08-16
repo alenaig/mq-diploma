@@ -496,6 +496,10 @@ a.tumblr{
         margin-bottom: 40px;
     }
 
+    a.article__title {
+        font-size: 20px;
+    }
+
     .news__container {
         width: 1170px;
         margin-left: auto;
@@ -669,6 +673,10 @@ a.tumblr{
         line-height: 29px;
         margin-top: 50px;
         margin-bottom: 20px;
+    }
+
+    a.article__title {
+        font-size: 17px;
     }
     
     .news__container {
@@ -848,6 +856,10 @@ a.tumblr{
         margin-bottom: 20px;
     }
 
+    a.article__title {
+        font-size: 16px;
+    }
+
     .news__container {
         display: flex;
         flex-wrap: wrap;
@@ -1008,7 +1020,6 @@ a.tumblr{
         border: 3px solid #b59f5b;
     }
     a.article__title {
-        font-size: 16px;
         text-align: left;
     }
 
@@ -1050,7 +1061,6 @@ a.tumblr{
         border: 3px solid #b59f5b;
     }
     a.article__title {
-        font-size: 17px;
         text-align: left;
     }
 
@@ -1089,7 +1099,6 @@ a.tumblr{
     }
     
     a.article__title {
-        font-size: 20px;
         text-align: left;
     }
 
@@ -1097,6 +1106,6 @@ a.tumblr{
         font-family: openSans, sans-serif;
         font-weight: 700;
         margin-right: 18px;
-        font-size: 15.7px;
+        font-size: 14px;
     }
 }
