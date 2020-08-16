@@ -496,43 +496,6 @@ a.tumblr{
         margin-bottom: 40px;
     }
 
-    .trend {
-        padding-top: 58px;
-    }
-    .top__post {
-        width: calc((100% - 24px) / 4);
-        height: 320px;
-        position: relative;
-    }
-    .trend__posts {
-        max-width: 1650px;
-        justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .trend__content {
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        z-index: 1;
-        margin: 0 20px 16px 20px;
-        padding: 37px 32px 32px 32px;
-        border: 3px solid #b59f5b;
-    }
-    
-    a.article__title {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    a.category {
-        font-family: openSans, sans-serif;
-        font-weight: 700;
-        margin-right: 18px;
-        font-size: 15.7px;
-    }
-    
     .news__container {
         width: 1170px;
         margin-left: auto;
@@ -708,46 +671,6 @@ a.tumblr{
         margin-bottom: 20px;
     }
     
-    .trend__posts {
-        flex-wrap: wrap;
-    }
-
-    .trend {
-        padding-top: 58px;
-    }
-    .top__post {
-        width: calc((100% - 4px) / 2);
-        height: 320px;
-        position: relative;
-        margin-bottom: 4px;
-    }
-    .trend__posts {
-        justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .trend__content {
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        z-index: 1;
-        margin: 0 20px 16px 20px;
-        padding: 37px 32px 32px 32px;
-        border: 3px solid #b59f5b;
-    }
-    a.article__title {
-        font-size: 17px;
-        text-align: left;
-    }
-
-    a.category {
-        font-family: openSans, sans-serif;
-        font-weight: 700;
-        margin-right: 18px;
-        font-size: 14px;
-    }
-
     .news__container {
         width: 700px;
         margin-left: auto;
@@ -879,6 +802,7 @@ a.tumblr{
 
 }
 
+/*Mobile styles*/
 @media (max-width: 640px) {
 
     header {
@@ -922,38 +846,6 @@ a.tumblr{
         font-size: 16px;
         margin-top: 40px;
         margin-bottom: 20px;
-    }
-    
-    .trend__posts {
-        flex-wrap: wrap;
-    }
-
-    .top__post {
-        width: 100%;
-        height: 230px;
-        position: relative;
-        margin-bottom: 4px;
-    }
-    .trend__content {
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        z-index: 1;
-        margin: 0 20px 16px 20px;
-        padding: 37px 32px 32px 32px;
-        border: 3px solid #b59f5b;
-    }
-    a.article__title {
-        font-size: 16px;
-        text-align: left;
-    }
-
-    a.category {
-        font-family: openSans, sans-serif;
-        font-weight: 700;
-        margin-right: 18px;
-        font-size: 14px;
     }
 
     .news__container {
@@ -1090,4 +982,121 @@ a.tumblr{
         margin-bottom: 45px;
     }
 
+}
+
+/*Trend part orientation*/
+@media (max-width: 640px) and (orientation: portrait) {
+        
+    .trend__posts {
+        flex-wrap: wrap;
+    }
+
+    .top__post {
+        width: 100%;
+        height: 230px;
+        position: relative;
+        margin-bottom: 4px;
+    }
+    .trend__content {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        margin: 0 20px 16px 20px;
+        padding: 37px 32px 32px 32px;
+        border: 3px solid #b59f5b;
+    }
+    a.article__title {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    a.category {
+        font-family: openSans, sans-serif;
+        font-weight: 700;
+        margin-right: 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 640px) and (orientation: landscape), (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+    .trend__posts {
+        flex-wrap: wrap;
+    }
+
+    .trend {
+        padding-top: 58px;
+    }
+    .top__post {
+        width: calc((100% - 4px) / 2);
+        height: 320px;
+        position: relative;
+        margin-bottom: 4px;
+    }
+    .trend__posts {
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .trend__content {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        margin: 0 20px 16px 20px;
+        padding: 37px 32px 32px 32px;
+        border: 3px solid #b59f5b;
+    }
+    a.article__title {
+        font-size: 17px;
+        text-align: left;
+    }
+
+    a.category {
+        font-family: openSans, sans-serif;
+        font-weight: 700;
+        margin-right: 18px;
+        font-size: 14px;
+    }  
+}
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape), (min-width: 1200px) {
+    .trend {
+        padding-top: 58px;
+    }
+    .top__post {
+        width: calc((100% - 24px) / 4);
+        height: 320px;
+        position: relative;
+    }
+    .trend__posts {
+        max-width: 1650px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .trend__content {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        margin: 0 20px 16px 20px;
+        padding: 37px 32px 32px 32px;
+        border: 3px solid #b59f5b;
+    }
+    
+    a.article__title {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    a.category {
+        font-family: openSans, sans-serif;
+        font-weight: 700;
+        margin-right: 18px;
+        font-size: 15.7px;
+    }
 }
