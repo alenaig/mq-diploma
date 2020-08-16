@@ -63,8 +63,8 @@ header::after {
 .menu__burger::before, .menu__burger::after {
     content:"";
     width: 100%;
-    height: 20%;
-    background-color: #a88f54;
+    height: 15%;
+    background-color: #ffffff;
     position: absolute;
     left: 0;
 }
@@ -76,9 +76,9 @@ header::after {
 } 
 .menu__burger__label {
     width: 100%;
-    height: 20%;
+    height: 15%;
     margin-top: -0.1em;  
-    background-color: #a88f54;  
+    background-color: #ffffff;  
   
     position: absolute;
     left: 0;
@@ -440,7 +440,7 @@ a.tumblr{
         background-image: url("../images/banner-bg.jpg");
         background-repeat: no-repeat;
         height: 450px;
-        background-size: 100% auto;
+        background-size: cover;
         position:relative;
         z-index: 0;
     }
@@ -628,7 +628,7 @@ a.tumblr{
     h4 {
         font-size: 20px;
         line-height: 24px;
-        color: 0f0d0e;
+        color: #0f0d0e;
     }
 
     footer {
@@ -664,6 +664,7 @@ a.tumblr{
 /*Tablet styles*/
 
 @media (min-width: 641px) and (max-width: 1199px) {
+
     header {
         background-image: url("../images/banner-bg-tablet.jpg");
         height: 390px;
@@ -675,15 +676,418 @@ a.tumblr{
     }
     
     .header__content {
-        max-width: 580px;
+        max-width: 700px;
         margin: auto;
-        margin-top: 50px;
     }
+
     .logo {
         position: relative;
-        height: 45px;
-        width: 190px;
+        height: 35px;
+        width: 160px;
         left: 15px;
-        top: 30px; 
+        top: 50px; 
     } 
+    .menu__burger {
+        position: relative;
+        height: 25px;
+        width: 25px;
+        right: 15px;
+        top: 50px; 
+    }
+
+    h1 {
+        font-size: 40px;
+        width: 615px;
+        margin-top: 140px; 
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 29px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .trend__posts {
+        flex-wrap: wrap;
+    }
+
+    .trend {
+        padding-top: 58px;
+    }
+    .top__post {
+        width: calc((100% - 4px) / 2);
+        height: 320px;
+        position: relative;
+        margin-bottom: 4px;
+    }
+    .trend__posts {
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .trend__content {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        margin: 0 20px 16px 20px;
+        padding: 37px 32px 32px 32px;
+        border: 3px solid #b59f5b;
+    }
+    a.article__title {
+        font-size: 17px;
+        text-align: left;
+    }
+
+    a.category {
+        font-family: openSans, sans-serif;
+        font-weight: 700;
+        margin-right: 18px;
+        font-size: 14px;
+    }
+
+    .news__container {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+
+    .feed {
+        width: 400px;
+    }
+
+    .post {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    .post::after {
+        content: "";
+        display: block;
+        width: 390px;
+        height: 3px;
+        margin-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #eeeeee;
+    }
+
+    .post img {
+        width: 390px;
+        height: 300px;
+        margin-bottom: 15px;
+    }
+    .post__text {
+        max-width: 390px;
+    }
+
+    .post__text a {
+        font-size: 14px;
+    }
+
+    a.post__name {
+        display: inline-block;
+        margin-top: 15px;
+        margin-bottom: 35px;
+        font-size: 17px;
+    }
+
+    p.date {
+        font-size: 12px;
+    }
+    p.author {
+        font-size: 12px;
+    }
+
+    p.text {
+        margin-top: 35px;
+    }
+    .post__text p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .side__panel {
+        width: 270px;
+    }
+
+    .new__posts img {
+        width: 70px;
+        height: 70px;
+        margin-right: 15px;
+    }
+
+    h3 {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    h3:not(.first__header) {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .search {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .our__products {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product {
+        width: calc((100% - 20px) / 2);
+        margin-bottom: 30px;
+    }
+    .product__image, .product__image img {
+        width: 290px;
+        height: 230px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h4 {
+        font-size: 17px;
+        line-height: 22px;
+        color: #0f0d0e;
+    }
+
+    footer {
+        max-width: 700px;
+        margin-top: 50px;
+    }
+    footer li {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 35px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        margin-top: 50px;
+        margin-bottom: 35px;
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    header {
+        background-image: url("../images/banner-mobile.jpg");
+        height: 640px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+    }
+    
+    .header__content {
+        width: 100%;
+        margin: auto;
+    }
+
+    .logo {
+        display: block;
+        /* height: 60px; */
+        width: 75%;
+        margin-top: 225px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .menu__burger {
+        position: relative;
+        height: 20px;
+        width: 25px;
+        right: 15px;
+        top: 30px; 
+    }
+
+    h1 {
+        font-size: 26px;
+        width: 78%;
+        margin-top: 40px; 
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .trend__posts {
+        flex-wrap: wrap;
+    }
+
+    .top__post {
+        width: 100%;
+        height: 230px;
+        position: relative;
+        margin-bottom: 4px;
+    }
+    .trend__content {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        margin: 0 20px 16px 20px;
+        padding: 37px 32px 32px 32px;
+        border: 3px solid #b59f5b;
+    }
+    a.article__title {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    a.category {
+        font-family: openSans, sans-serif;
+        font-weight: 700;
+        margin-right: 18px;
+        font-size: 14px;
+    }
+
+    .news__container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45px;
+    }
+
+    .feed {
+        width: 100%;
+    }
+
+    .post {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    .post::after {
+        content: "";
+        display: block;
+        width: 330px;
+        height: 3px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #eeeeee;
+    }
+
+    .post img {
+        width: 330px;
+        height: 255px;
+        margin-bottom: 10px;
+    }
+    .post__text {
+        max-width: 330px;
+    }
+
+    .post__text a {
+        font-size: 14px;
+    }
+
+    a.post__name {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    p.date {
+        font-size: 12px;
+    }
+    p.author {
+        font-size: 12px;
+    }
+
+    p.text {
+        margin-top: 15px;
+    }
+    .post__text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .side__panel {
+        width: 100%;
+    }
+
+    .new__posts img {
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+    h3:not(.first__header) {
+        margin-top: 60px;
+        margin-bottom: 25px;
+    }
+
+    .search {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .tags a {
+        line-height: 22px;
+        padding: 3px 12px;
+    }
+
+    .our__products {
+        width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .product__image, .product__image img {
+        width: 285px;
+        height: 285px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h4 {
+        font-size: 17px;
+        line-height: 22px;
+        color: #0f0d0e;
+    }
+
+    footer {
+        max-width: 330px;
+        margin-top: 45px;
+    }
+    footer li {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 35px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
 }
