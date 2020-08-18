@@ -1109,3 +1109,154 @@ a.tumblr{
         font-size: 14px;
     }
 }
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+    a.article__title {
+        font-size: 11px;
+    }
+}
+
+/*Popup*/
+
+.popup {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px; 
+    background-color: rgba(0, 0, 0, 0.75);    
+    position: fixed;
+    display: flex;
+    z-index: 2;
+}
+.popup__container {
+    max-width: 390px;
+    height: 590px;
+    margin: auto; 
+    background-color: #ffffff;
+    position: relative;
+}
+
+.feedback__form {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 55px;
+}
+.feedback__row {
+    margin-top: 25px;
+}
+
+.feedback__hint {
+    display: block;
+    margin-bottom: 5px;
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+}
+.feedback__field {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+    font-family: OpenSans,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    border: none;
+    color: #000;
+    background-color: #f4f7f6;
+    background-image: url("../svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: right 13px center;
+}
+
+.radio__hint {
+    margin-right: 13px;
+    font-family: OpenSans,sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+.radio {
+    margin-right: 5px;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #b59f5b;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #b59f5b;
+    content: '';
+    display: block;
+    visibility: visible;
+    border: 2px solid #b59f5b;
+}
+
+.textarea {
+    box-sizing: border-box;
+    min-width: 100%;
+    height: 130px;
+    padding: 18px;
+    font-family: OpenSans,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+    border: none;
+    background-color: #f4f7f6;
+}
+
+.feedback__button {
+    width: 100%;
+    height: 48px;
+    font-family: OpenSans,sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    color: #ffffff;
+    background-color: #b59f5b;
+    cursor: pointer;
+}
+
+.popup__close {
+    width: 28px;
+    height: 20px;
+    font-size: 20px;
+    position: absolute;
+    top: -30px;
+    right: 0;  
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-indent: -9999px;
+    cursor: pointer;
+    background-image: url("../svg/form-x.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 18px;
+}
+
+.popup__close:before, .popup__close:after {
+    width: 28px;
+    height: 4px;
+}
+.hidden {
+    display: none;
+}

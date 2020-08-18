@@ -9,6 +9,52 @@
 </head>
 
 <body>
+    <div class="popup hidden">
+        <div class="popup__container">
+          <div class="feedback">
+            <div class="feedback__header">
+              <h3 class="feedback__title">ваш фидбек</h3> 
+            </div>
+            <div class="feedback__content">
+              <form class="feedback__form">
+                <div class="feedback__row">
+                    <label class="feedback__group">
+                        <span class="feedback__hint">Как часто вы заходите на сайт?</span>
+                        <select class="feedback__field">
+                            <option>Почти каждый день</option>
+                            <option>Раз в несколько дней</option>
+                            <option>Раз в несколько недель</option>
+                            <option>Несколько раз в год</option>
+                        </select>
+                    </label>         
+                </div>
+                <div class="feedback__row">
+                    <span class="feedback__hint">Вы подписаны на e-mail рассылку?</span>
+                    <label class="feedback__group radio__item">
+                        <input type="radio" class="radio" name="radio__group">
+                        <span class="radio__hint">Да</span>
+                    </label>
+                    <label class="feedback-group radio__item">
+                        <input type="radio" class="radio" name="radio__group">
+                        <span class="radio__hint">Нет</span>
+                    </label>
+                </div>  
+                <div class="feedback__row">
+                    <label class="feedback__group">
+                        <span class="feedback__hint">Расскажите, какой контент вы хотели бы видеть</br> на нашем сайте?</span>
+                        <textarea class="textarea" placeholder="Может, больше рецептов?" required></textarea>
+                    </label>         
+                </div>
+                <div class="feedback__row">
+                  <button class="feedback__button"><span class="feedback__button__label">Отправить</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <button class="popup__close" type="button">Закрыть окно</button>
+        </div>
+    </div>
+
     <header>
         <div class="header__content">
             <div class="top__panel">
