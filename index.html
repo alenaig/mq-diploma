@@ -125,7 +125,7 @@
                     </div>
                     <a href="#" class="post__name">10 мест, ради которых стоит проснуться на рассвете</a>
                     <div>
-                        <p class="date">10 июня 2019</p>
+                        <time class="date">10 июня 2019</time>
                         <p class="author">Неизвестный автор</p>
                     </div>
                     <p class="text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города...
@@ -141,7 +141,7 @@
                     </div>
                     <a href="#" class="post__name">йога для начинающих в домашних условиях</a>
                     <div>
-                        <p class="date">10 июня 2019</p>
+                        <time class="date">10 июня 2019</time>
                         <p class="author">Неизвестный автор</p>
                     </div>
                     <p class="text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что
@@ -156,7 +156,7 @@
                     </div>
                     <a href="#" class="post__name">лучшие музыкальные фестивали этого лета</a>
                     <div>
-                        <p class="date">10 июня 2019</p>
+                        <time class="date">10 июня 2019</time>
                         <p class="author">Неизвестный автор</p>
                     </div>
                     <p class="text">Лето на носу, в с ним и музыкальные фестивали. На каком же из них вы разобьёте свою
@@ -173,7 +173,7 @@
                     </div>
                     <a href="#" class="post__name">наукоёмкий подход к кулинарии</a>
                     <div>
-                        <p class="date">10 июня 2019</p>
+                        <time class="date">10 июня 2019</time>
                         <p class="author">Неизвестный автор</p>
                     </div>
                     <p class="text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию
@@ -190,7 +190,7 @@
                     </div>
                     <a href="#" class="post__name">делаем модные принты на подушках для интерьера</a>
                     <div>
-                        <p class="date">10 июня 2019</p>
+                        <time class="date">10 июня 2019</time>
                         <p class="author">Неизвестный автор</p>
                     </div>
                     <p class="text">Подушки для дивана целесообразно заказать в съемных чехлах на молнии, если потребуется
@@ -205,52 +205,59 @@
                 <div class="newpost__info">
                     <img src="images/2.jpg" alt="travel post">
                     <div>
-                        <p class="date">14 июня 2019</p>
+                        <time class="date">14 июня 2019</time>
                         <a href="#">10 мест, ради которых стоит проснуться</a>
                     </div>
                 </div>
                 <div class="newpost__info">
                     <img src="images/151.jpg" alt="yoga post">
                     <div>
-                        <p class="date">14 июня 2019</p>
+                        <time class="date">14 июня 2019</time>
                         <a href="#">йога для домашних</a>
                     </div>
                 </div>
                 <div class="newpost__info">
                     <img src="images/45.jpg" alt="balcony post">
                     <div>
-                        <p class="date">14 июня 2019</p>
+                        <time class="date">14 июня 2019</time>
                         <a href="#">как мы превратили классное место в балкон</a>
                     </div>
                 </div>
                 <div class="newpost__info">
                     <img src="images/501.jpg" alt="food post">
                     <div>
-                        <p class="date">14 июня 2019</p>
+                        <time class="date">14 июня 2019</time>
                         <a href="#">кулинарный подход к науке</a>
                     </div>
                 </div>
                 <div class="newpost__info">
                     <img src="images/7.jpg" alt="hair post">
                     <div>
-                        <p class="date">14 июня 2019</p>
+                        <time class="date">14 июня 2019</time>
                         <a href="#">лучшие прически для распущенных волос</a>
                     </div>
                 </div>
             </div>
 
             <form class="search">
+                <span class="visually-hidden">Поиск по сайту</span>
                 <div class="search__form">        
                     <input type="search" class="search__field" placeholder="Найти..." name="query" required>
-                    <button type="button" class="search__button"></button>
+                    <button type="button" class="search__button">
+                        <span class="visually-hidden">Кнопка поиска</span>
+                    </button>
+
                 </div>                
             </form>    
 
             <div class="newsletter">
                 <h3>рассылка</h3>
-                <form class="subscribe">       
+                <form class="subscribe">   
+                    <span class="visually-hidden">Подписка</span>    
                     <input type="email" class="subscribe__field" placeholder="Ваш email-адрес" name="query" required>
-                    <button type="button" class="subscribe__button">подписаться</button>               
+                    <button type="button" class="subscribe__button">
+                        <span class="visually-hidden">Подписаться</span>
+                        подписаться</button>               
                 </form>   
             </div>
             <div class="tags">
@@ -374,11 +381,21 @@
     <footer>
         <div class="social">
             <ul>
-                <li><a class="twitter" href="#"></a></li>
-                <li><a class="pinterest" href="#"></a></li>
-                <li><a class="facebook" href="#"></a></li>
-                <li><a class="instagram" href="#"></a></li>
-                <li><a class="tumblr" href="#"></a></li>
+                <li><a class="twitter" href="#">
+                    <span class="visually-hidden">twitter icon</span>
+                </a></li>
+                <li><a class="pinterest" href="#">
+                    <span class="visually-hidden">pinterest icon</span>
+                </a></li>
+                <li><a class="facebook" href="#">
+                    <span class="visually-hidden">facebook icon</span>
+                </a></li>
+                <li><a class="instagram" href="#">
+                    <span class="visually-hidden">instagram icon</span>
+                </a></li>
+                <li><a class="tumblr" href="#">
+                    <span class="visually-hidden">tumblr icon</span>
+                </a></li>
             </ul>   
         </div>
         <p class="copyright">Copyright &copy; 2009-2019 City Blog LLC.</p>
